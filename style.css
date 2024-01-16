@@ -4,3 +4,72 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.section-title {
+  color: var(--primary-color);
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+:root {
+  --primary-color:#131318;
+  --secondary-color:#424247;
+  --tertiary-color:#FF5400;
+}
+header {
+  margin-top: 30px;
+}
+
+/* NAV STYLE */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 80px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-title {
+  margin-left: 20px;
+}
+.title-vision {
+  color:var(--tertiary-color);
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin-left: 40px;
+  padding: 10px 15px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+nav ul li:hover a{
+  color: #fff;
+  transition: .2s;
+  
+}
+
+nav ul li:hover{
+  background: var(--tertiary-color);
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: .6s;
+}
+.active {
+  background-color: var(--tertiary-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.active a {
+  color: #fff;
+}
