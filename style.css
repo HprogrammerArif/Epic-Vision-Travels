@@ -128,18 +128,34 @@ nav ul li:hover{
 }
 .explore form {
   display: flex;
-  width: 600px;
+  width: 800px;
   height: 80px;
-  border: 1px solid black;
+  justify-content: center;
   align-items: center;
   /* margin-top: 12250px; */
   margin: 0 auto;
+  margin-top: 20px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.30);
 }
-form .box {
-  padding: 12px;
+form input, select {
+  width: 174px;
+  height: 52px;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--white-color);
+  margin: 10px;
 }
+ .input-serch input {
+  background: #FF5400;
+  position: relative;
+ }
+ .input-serch i {
+  position: absolute;
+  right: 311px;
+  top: 490px;
+ }
 
 /* POPULARS TOUR SECTION */
 .popular-tours-section {
@@ -172,7 +188,7 @@ form .box {
 }
 .destination-contant {
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -237,9 +253,9 @@ form .box {
 .choose-us-card-1 {
   width: 40%;
   height: 280px;
-  border-radius: 16px;
-  border: 1px solid rgba(251, 181, 99, 0.20);
-  background: rgba(251, 181, 99, 0.05);
+  border-radius: 16px;  
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background: rgba(41, 206, 246, 0.05);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   display: flex-start;
@@ -313,7 +329,7 @@ form .box {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -384,7 +400,104 @@ form .box {
   border-radius: 10px;
 }
 
+/* NEWSLETTER SECTION */
 
+.newsletter-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  height: 420px;
+  border-radius: 16px;
+  border: 1px solid #FF5400;
+  margin: 0 80px;
+  
+  /* margin-top: 12250px; */
+  /* background: rgba(255, 255, 255, 0.30); */
+}
+.newsletter-form-container .box1 {
+  display:flex;
+  padding: 12px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05); 
+  width: 393px;
+  height: 52px;  
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.newsletter-form-contant {
+  text-align: start;
+  margin: 0 40px;
+}
+.newsletter-description {
+  margin-top: 16px;
+}
+#submit-box {
+  background: #FF5400;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.save-up-section img {
+  width: 100%;
+}
+.save-up-section {
+  margin-right: 80px;
+  
+}
+.save-up-box {
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  background: #FF5400;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 240px;
+  right: 7%;
+ 
+}
+.save-up-section-newsletter {
+  position: relative;
+}
+.footer {
+  width: 100%;
+  height: 502px;
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+.footer-description {
+  max-width: 800px;
+  margin: 30px auto;
+}
+.footer-social-media i {
+  margin: 10px 15px;
+}
+.Rights-Reserved {
+  margin-top: 50px;
+}
 
 
 
