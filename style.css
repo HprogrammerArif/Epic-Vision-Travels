@@ -128,8 +128,8 @@ nav ul li:hover{
 }
 .explore form {
   display: flex;
-  width: 800px;
-  height: 80px;
+  /* width: 800px; */
+  /* height: 80px; */
   justify-content: center;
   align-items: center;
   /* margin-top: 12250px; */
@@ -283,6 +283,7 @@ form input, select {
   display: flex;
   justify-content: space-around;
 }
+
 /* SECTION DEALS AND DISCOUNT */
 
 .deals-discounts {
@@ -297,7 +298,7 @@ form input, select {
 }
 .deals-discounts-card {
   width: 50%;
-  height: 340px;
+  
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
@@ -365,6 +366,7 @@ form input, select {
   bottom: 70px;
   left: 30px;
 }
+
 .See-All-Packages {
   text-align: center;
   display: flex;
@@ -376,7 +378,7 @@ form input, select {
 /* Place To Get Lost */
 .popular-tours-section-2 {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin: 80px;
 }
 .popular-tours-contant-2 {
@@ -473,6 +475,9 @@ form input, select {
 .save-up-section-newsletter {
   position: relative;
 }
+
+/* FOOTER SECTION */
+
 .footer {
   width: 100%;
   height: 502px;
@@ -498,13 +503,158 @@ form input, select {
 .Rights-Reserved {
   margin-top: 50px;
 }
+.hide {
+  display: none;
+}
 
 
 
+/* MEDIA QUARIES */
 
 @media screen and (max-width:576px) {
+   
+  nav {
+    flex-direction: column;
+    margin: 0;
+  }
+  nav>ul {
+    display: block;
+    margin-left: 150px;
+  }
+  .nav-logo {
+    margin-right: 150px;
+  }
+   
+  .explore {
+    margin: 30px;
+}
+
+  .explore-content {
+    margin: 0px 20px;
+  }
+  .explore-content .explore-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 10px;
+
+  }
+  .explore form {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  form input, select {
+    width: 284px;
+  }
+  .input-serch i {
+    position: absolute;
+    right: 30%;
+    top: 137%;
+   }
+
+
   .popular-tours-section {
     flex-direction: column;
     gap: 30px;
+    margin: 0;
   }
+  .popular-tours-contant {
+    max-width: 100%;
+  }
+  .popular-tours-img-section {
+    width: 80%;
+
+  }
+  .popular-tours-img-section img{
+    width: 100%; 
+  }
+
+  .destination-location-section {
+    grid-template-columns:1fr;
+    grid-auto-rows: 180px;
+  }
+
+  .destination {
+    margin: 0px 20px;
+   }
+
+  .row-2 {
+    grid-row: span 1;
+  }
+  .row-3 {
+    grid-row: span 1;
+  }
+  .col-2 {
+    grid-column: span 1;
+  }
+
+
+  .choose-us-card-section {
+    flex-direction: column;
+    gap: 30px;
+}
+.choose-us-card-1 {
+   width: 100%;
+  height: 300px;
+  }
+  .choose-us-card-3 {
+    width: 100%;
+    height: 240px;
+  }
+  .choose-us {
+    margin: 0px 30px;
+}
+
+
+  .deals {
+    max-width: 450px;
+  }
+  .deals-discounts,
+  .deals-discounts-2
+   {
+    margin: 20px;
+}
+.deals-discounts-card,
+.deals-discounts-card-2
+ {
+  width: 90%;
+  bottom: 20px;
+  right: 30px;
+}
+
+
+.See-All-Packages {
+  margin-bottom: 0;
+}
+
+.popular-tours-section-2 {
+  flex-direction: column;
+  margin: 20px;
+}
+
+.popular-tours-contant-2 {
+  max-width: 100%;
+  margin-right: 20px;
+}
+ .popular-tours-img-section{
+  margin-left: 15px;
+} 
+
+.newsletter {
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.save-up-section {
+  margin: 20px;
+}
+
+.save-up-box {
+  top: 75%;
+  right: 8%;
+}
+
+.footer-description {
+  max-width: 500px;
+}
 }
